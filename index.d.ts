@@ -2,15 +2,15 @@ import { Singleton } from 'egg';
 import SMTPTransport = require('nodemailer/lib/smtp-transport');
 import Mail = require('nodemailer/lib/mailer');
 
-import NodeEmail from '../lib/nodemailer';
+import NodeEmail from './lib/nodemailer';
 
 declare module 'egg' {
-  interface Application {
-    nodemailer: NodeMailer;
+  interface NodeMailer extends Singleton<NodeEmail>, NodeEmail {
+    get(id: string): NodeEmail;
   }
 
-  interface NodeMailer extends Singleton<NodeEmail> {
-    get(id: string): NodeEmail;
+  interface Application {
+    nodemailer: NodeMailer;
   }
 
   interface EggAppConfig {

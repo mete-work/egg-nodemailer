@@ -17,4 +17,5 @@ app.js|.d.ts
 .vscode
 **/*.d.ts
 !typings/**/*.d.ts
+!index.d.ts
 yarn-error.log
