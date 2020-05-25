@@ -7,7 +7,7 @@ export default class NodeEmail {
     private config;
     private app;
     constructor(config: SMTPTransport | SMTPTransport.Options | string, app: Application);
-    getConfig(): string | SMTPTransport.Options | SMTPTransport;
+    getConfig(): string | SMTPTransport | SMTPTransport.Options;
     getApp(): Application;
     /**
      * 发送邮件

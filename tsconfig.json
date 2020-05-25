@@ -15,13 +15,8 @@
     "noUnusedParameters": true,
     "importHelpers": true,
     "resolveJsonModule": true,
-    "esModuleInterop":true
+    "esModuleInterop": true
   },
-  "include": [
-    "app",
-    "lib",
-    "config",
-    "scripts"
-  ],
+  "exclude": ["node_modules"],
   "compileOnSave": true
 }
