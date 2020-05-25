@@ -12,7 +12,6 @@ package-lock.json
 /test/**/*.js
 /config/**/*.js
 /scripts/**/*.js
-*.d.ts
 *.js.map
 .vscode
 !typings/**/*.d.ts

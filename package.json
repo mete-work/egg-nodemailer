@@ -1,8 +1,7 @@
 {
   "name": "@mete-work/egg-nodemailer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nodemailer plugin for Egg.js.",
-  "registry": "",
   "eggPlugin": {
     "name": "nodemailer",
     "dependencies": [
@@ -32,12 +31,6 @@
     "prepublish": "npm run tsc",
     "postpublish": "node scripts/published.js"
   },
-  "files": [
-    "config",
-    "lib",
-    "app.js",
-    "index.d.ts"
-  ],
   "ci": {
     "version": "8, 9"
   },
@@ -53,6 +46,8 @@
   "license": "MIT",
   "devDependencies": {
     "rimraf": "^3.0.2",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.3",
+    "egg": "^2.20.2",
+    "egg-bin": "^4.9.0"
   }
 }

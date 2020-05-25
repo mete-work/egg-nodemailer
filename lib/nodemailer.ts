@@ -8,7 +8,7 @@ import fs = require('fs');
 import path = require('path');
 import util = require('util');
 
-import { NodeMailerOptions } from '..';
+import { NodeMailerOptions } from '../typings';
 import { Application } from 'egg';
 
 const readFile = util.promisify(fs.readFile);
