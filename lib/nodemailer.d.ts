@@ -1,7 +1,7 @@
 /// <reference types="node" />
 import SMTPTransport = require('nodemailer/lib/smtp-transport');
 import Mail = require('nodemailer/lib/mailer');
-import { NodeMailerOptions } from '../typings';
+import { NodeMailerOptions } from '..';
 import { Application } from 'egg';
 export default class NodeEmail {
     private config;
